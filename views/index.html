@@ -91,7 +91,7 @@
         <div class="modal-content">
 
             <button id="modal_clip_confirm" class="modal-body clip_button" data-clipboard-target="#clipTarget" title="Copy current selection to clipboard">
-                <img src="/img/clipboard.png" class="center-block">
+                <img src="img/clipboard.png" class="center-block">
                 <h1 class="text-center" >Copy selection to OS clipboard?</h1>
                 <input id="clipTarget"/>
             </button>
@@ -106,7 +106,7 @@
         <div class="modal-content">
 
             <div id="modal_paste_confirm" class="modal-body clip_button" data-clipboard-text="Default hex" title="Copy current selection to clipboard">
-                <img src="/img/clipboard.png" class="center-block">
+                <img src="img/clipboard.png" class="center-block">
                 <h1 class="text-center">For paste press Ctrl-V (Cmd-V)</h1>
             </div>
 
@@ -297,7 +297,7 @@
 
             <div  class="calc well" heading="Script" is-open="1">
                 <h3>Script {{scriptname}}</h3>
-                <img src="../img/loader.gif" class="calc_busy" style="display:none;position: absolute;">
+                <img src="img/loader.gif" class="calc_busy" style="display:none;position: absolute;">
                 <div ng-if="calc_error" class="red"><pre>{{calc_error}}</pre></div>
                 <div id="calc_form"></div>
                 <div ng-if="calc_ready">
@@ -325,7 +325,7 @@
         </div>
     <textarea></textarea>
 
-<script src="/lib/webfont.js"></script>
+<script src="lib/webfont.js"></script>
 <script>
     window.font_loaded_ok = false;
 
@@ -377,7 +377,7 @@
     }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<link href="material/css/bootstrap-material-design.min.css" rel="stylesheet">
+<link href="material/css/material.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <script src="https://apis.google.com/js/platform.js" async defer>

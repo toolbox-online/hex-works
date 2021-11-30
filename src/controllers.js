@@ -108,7 +108,7 @@ var MainCtrl = function ($scope, $http, scripting,$sce,$location) { // $location
 
     $scope.calcname = "";
     window.rscope = $scope;
-    $http.get("/calclist").success(function (r) {
+    $http.get("calclist").success(function (r) {
         $(".css-treeview").html(r);
 
 
@@ -959,8 +959,8 @@ app.config(function ($routeProvider,$locationProvider) {
         enabled:true,
         rewriteLinks: false,
     });
-    $routeProvider.when("/rus", {templateUrl:"/templates/rus.html"});
-    $routeProvider.when("/eng", {templateUrl:"/templates/eng.html"});
+    $routeProvider.when("/rus", {templateUrl:"templates/rus.html"});
+    $routeProvider.when("/eng", {templateUrl:"templates/eng.html"});
 });
 
 
