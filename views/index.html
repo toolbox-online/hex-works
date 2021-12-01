@@ -5,7 +5,7 @@
     <meta name="description" content="Hex editor for EEPROM dump editing. Main purpose of this application is editing and analyzing small binary files, mostly eeprom dumps.
     You can open, save, compare, analyse, decode binary data.">
     <meta name="keywords" content="hex editor compare dump eeprom automotive">
-    <title>Online Hex editor tool</title>
+    <title>在线二进制(16进制)编辑器</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/tree.css" />
@@ -28,14 +28,14 @@
 </div>
 <div id="context-editor">
     <ul class="dropdown-menu" role="menu">
-        <li><a tabindex="-1" href="#" ng-click="clearMarkers()">Clear markers</a></li>
-        <li><a tabindex="-1" href="#" ng-click="swapBytes()">Swap bytes</a></li>
-        <li><a tabindex="-1" href="#" ng-click="xorDialog();">XOR...</a></li>
-        <li><a tabindex="-1" href="#" ng-click="fillDialog();">FILL...</a></li>
+        <li><a tabindex="-1" href="#" ng-click="clearMarkers()">清除标记</a></li>
+        <li><a tabindex="-1" href="#" ng-click="swapBytes()">换字节</a></li>
+        <li><a tabindex="-1" href="#" ng-click="xorDialog();">异或...</a></li>
+        <li><a tabindex="-1" href="#" ng-click="fillDialog();">填充...</a></li>
         <li class="divider"></li>
-        <li><a class="clip_button" id="context_copy" data-clipboard-text="Context copy" tabindex="-1" href="#">Copy</a></li>
-        <li><a tabindex="-1" href="#" ng-click="cmdPaste();">Paste...</a></li>
-        <li><a tabindex="-1" href="#" ng-click="selectAll();">Select All</a></li>
+        <li><a class="clip_button" id="context_copy" data-clipboard-text="Context copy" tabindex="-1" href="#">拷贝</a></li>
+        <li><a tabindex="-1" href="#" ng-click="cmdPaste();">粘贴...</a></li>
+        <li><a tabindex="-1" href="#" ng-click="selectAll();">全选</a></li>
     </ul>
 </div>
 
@@ -51,7 +51,7 @@
                 <ng-view></ng-view>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 
             </div>
         </div>

@@ -10,6 +10,7 @@ import localforage from 'localforage';
 import {toHex,toChar,alignToLength,hexInvert,hexEncode,reverseByteString,stringToByteSeq} from './utils.js'
 import {saveAs} from 'file-saver';
 import {compileScript} from './scripting.js';
+import url from 'url';
 
 var MainCtrl = function ($scope, $http, scripting,$sce,$location) { // $location
     'use strict';
@@ -17,8 +18,8 @@ var MainCtrl = function ($scope, $http, scripting,$sce,$location) { // $location
     var allSelected = [];
 
     console.log("root");
-
-    var path = $location.path();
+    var basepath = url.parse(document.baseURI).pathname;
+    var path = $location.path().substring($location.path().indexOf(basepath),basepath.length);
     $scope.lang = "eng";
     $scope.locale = englocale;
 
